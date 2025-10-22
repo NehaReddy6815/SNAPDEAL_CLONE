@@ -1,0 +1,648 @@
+.snapdeal-detail {
+  background: #fff;
+  padding: 0px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+    margin-right:40px;  
+    margin-left:90px;
+    
+}
+
+.product-breadcrumbs {
+  font-size: 13px;
+  color: #4b4a4a;
+  margin-left:90px;
+ 
+  padding: 6px 0px;
+}
+.product-breadcrumbs a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* Rating & Review Styles */
+.rating-summary {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.rating-average {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.average-score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.total-ratings {
+  color: #666;
+  font-size: 14px;
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-label {
+  min-width: 60px;
+  font-size: 14px;
+  color: #666;
+}
+
+.bar-fill {
+  flex-grow: 1;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-value {
+  height: 100%;
+  background-color: #ffc107;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.bar-count {
+  min-width: 40px;
+  text-align: right;
+  color: #666;
+  font-size: 14px;
+}
+
+.rating-form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.rating-form h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+.rating-form input,
+.rating-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.rating-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.rating-form button {
+  background-color: #e40046;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.rating-form button:hover {
+  background-color: #c70036;
+}
+
+.reviews-list {
+  margin-top: 20px;
+}
+
+.review-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-user {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.review-date {
+  color: #888;
+  font-size: 12px;
+}
+
+.review-text {
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.verified-purchase {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.no-reviews {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  font-style: italic;
+}
+
+.product-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.snapdeal-main-row {
+  display: flex;
+  gap: 30px;
+ 
+ 
+}
+
+/* Gallery */
+.snapdeal-gallery-col {
+  flex: 1;
+  display: flex;
+}
+.snapdeal-img-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.snapdeal-small-img-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center; 
+}
+.snapdeal-small-img {
+  width: 60px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+
+.snapdeal-main-img {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease; /* smooth zoom */
+  cursor: zoom-in;
+}
+
+.snapdeal-main-img:hover {
+  transform: scale(1.2); /* zoom effect */
+}
+
+/* Info side */
+.snapdeal-info {
+  flex: 1.5;
+  border-left: 1px solid #ddd; /* vertical line */
+  padding-left: 40px;   
+   padding-bottom: 30px;
+}
+.extrainfo{
+  font-size: 12px;
+  color: #777575;
+  margin-top:10px;
+  padding-bottom:50px;
+}
+.snapdeal-title {
+      color: #333333;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 27px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+.snapdeal-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.snapdeal-stars {
+  color: #f5a623;
+}
+.snapdeal-link {
+  color: #0275d8;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+/* Price */
+.snapdeal-price-row {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.snapdeal-mrp{
+  color: #999;
+}
+.snapdeal-mrp-strike {
+  text-decoration: line-through;
+  margin: 0 5px;
+  color: #999;
+}
+.snapdeal-tax {
+  color: #999;
+}
+.snapdeal-offer-row {
+  font-size: 22px;
+  color: #f9054e;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.snapdeal-discount {
+  font-size: 14px;
+  background: #fbfffa;
+  color: #7f817f;
+  padding: 2px 6px;
+  margin-left: 10px;
+  border-radius: 2px;
+  outline:  #7f817f;;
+}
+
+/* Buttons */
+.snapdeal-actions {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+.snapdeal-cart-btn {
+  background: #333;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.snapdeal-buy-btn {
+  background: #e40046;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.snapdeal-color-row {
+  display: flex;
+  align-items:flex-start;
+  margin: 30px 0; /* space above and below */
+  gap: 30px;
+}
+
+.snapdeal-color-label {
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+  min-width: 50px; /* label width */
+}
+
+.snapdeal-color-list {
+  display: flex;
+  gap: 8px; /* space between color options */
+}
+
+/* Size Selection Styles */
+.snapdeal-size-row {
+  margin: 20px 0;
+}
+
+.size-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.size-button {
+  min-width: 45px;
+  height: 45px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.size-button:hover:not(.out-of-stock) {
+  border-color: #e40046;
+  color: #e40046;
+}
+
+.size-button.selected {
+  border-color: #e40046;
+  color: #e40046;
+  background-color: #fff0f3;
+}
+
+.size-button.out-of-stock {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.size-button.out-of-stock::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #999;
+  transform: rotate(-45deg);
+}
+
+.selected-size {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.snapdeal-color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 4px;
+  border-radius: 2px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.snapdeal-color-item.selected {
+  border: 2px solid #22c0f9; 
+ 
+}
+
+.snapdeal-color-item img {
+  width: 70px;
+  height: 80px;
+  object-fit: contain;
+  
+}
+
+.snapdeal-color-item span {
+  font-size: 12px;
+  color: #555;
+}
+
+
+/* Tabs */
+.snapdeal-below-tabs {
+  margin-top: 30px;
+  margin-left:90px;
+  margin-right: 40px;
+  background-color: #ffffff;
+}
+.snapdeal-below-wrap{
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+  margin-left:90px;
+  margin-right:40px;
+}
+.snapdeal-below-wrap .snapdeal-below-tabs{
+  flex: 0 0 80%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.snapdeal-below-two-col{
+  display:flex;
+  gap:29px;
+}
+.snapdeal-right-sidebar{
+  flex: 0 0 18%;
+  margin-top: 27px;
+}
+.seller-card{
+  border:1px solid #eee;
+  background:#ffffff;
+  padding:12px;
+  border-radius:0px;
+  margin-bottom:16px;
+  height:250px;
+}
+.seller-title{font-size:12px;color:#777;margin-bottom:6px;}
+.seller-name{font-weight:600;margin-bottom:6px;}
+.seller-rating{font-size:12px;color:#444;margin-bottom:10px;}
+.seller-links{display:block;gap:12px}
+.seller-links a{color:#2874f0;text-decoration:none;font-size:15px}
+.sidebar-card{
+  border:1px solid #eee;
+  background:#ffffff;
+  padding:12px;
+  border-radius:0px;
+  margin-bottom:16px;
+}
+.sidebar-card-title{font-weight:600;margin-bottom:6px;}
+.sidebar-card-link{color:#2874f0;font-size:13px;}
+.sidebar-card-desc{font-size:13px;color:#666}
+.snapdeal-below-tab-menu {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  margin-left:10px;
+  padding-top:10px;
+  
+}
+.snapdeal-below-tab-menu button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color:#555
+}
+.snapdeal-below-tab-menu button:hover {
+  color: #1b1a1a;
+  border-bottom: 2px solid #e40046;
+}
+
+
+.snapdeal-below-tab-content{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.snapdeal-separator {
+  margin: 0 4px;
+  color: #c5c3c3;  /* grey */
+}
+
+.snapdeal-blue {
+  color: #2874f0;  /* Snapdeal/Flipkart-style blue */
+  cursor: pointer;
+}
+.rating-divider {
+  border: none;
+  border-top: 1.5px solid #c5c3c3; 
+    margin-top: 4px ;
+    margin-bottom:20px; 
+}
+.snapdeal-delivery-row {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* space between label, wrapper, and time */
+  margin-top: 30px 0px;
+  font-size: 14px;
+  padding:20px 0px;
+}
+
+.snapdeal-pincode-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.snapdeal-pincode-input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-right: none; /* merge with button */
+  border-radius: 1px 0 0 1px;
+  width: 120px;
+  outline: none;
+}
+
+.snapdeal-check-btn {
+  padding: 8px 16px;
+  background: #222222;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 1px 1px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* center text vertically */
+  justify-content: center;
+}
+
+.snapdeal-check-btn:hover {
+  background: #080808;
+}
+
+.snapdeal-delivery-time {
+  color: #777;
+  font-size: 13px;
+}
+.snapdeal-accordion {
+  border-top: 1px solid #eee;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left:10px;
+}
+
+.snapdeal-accordion-item {
+  border-bottom: 1px solid #eee;
+}
+
+.snapdeal-accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 0;
+  font-weight: 500;
+  
+}
+
+.snapdeal-accordion-icon {
+  width: 20px;
+  height:20px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left:20px;
+  font-size: 15px;
+  color: #555;
+  border:1px solid #5a5959;
+  border-radius:2px;
+}
+
+.snapdeal-accordion-title {
+  flex-grow: 1;
+  font-size: 20px;
+  color: #555;
+}
+
+.snapdeal-accordion-content {
+  padding: 10px 30px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.view-store{
+  font-size: 14px;
+  display: block;
+}
+.snapdeal-main-img-wrap {
+  position: relative; /* important for absolute positioning inside */
+  flex: 1;
+  overflow: hidden;
+}
+
+.out-of-stock-badge {
+  position: absolute;
+  top: 50%;
+  left: 0;             /* start from left edge */
+  width: 100%;         /* full width of image */
+  transform: translateY(-50%); /* only vertical centering */
+  background: rgba(44, 42, 42, 0.8); /* semi-transparent red */
+  color: #fff;
+  padding: 8px 0;      /* only vertical padding */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;  /* text in center */
+  text-transform: uppercase;
+  z-index: 10;
+  pointer-events: none;
+}
+

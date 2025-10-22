@@ -1,0 +1,89 @@
+.download-app-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+  margin:0 35px;
+  background-color: #ffffff;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+ 
+}
+
+.download-app-banner.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.download-app-banner .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.download-app-banner .app-image img {
+  width: 400px;
+  max-width: 100%;
+  height:auto;
+}
+
+.download-app-banner .app-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.download-app-banner .app-text p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.download-app-banner .app-buttons a img {
+  height: 50px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.download-app-banner .app-buttons a img:hover {
+  transform: scale(1.05);
+}
+.download-app-banner {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.download-app-banner.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .download-app-banner .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .download-app-banner .app-text h2 {
+    font-size: 24px;
+  }
+
+  .download-app-banner .app-text p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .download-app-banner .app-image img {
+    width: 200px;
+  }
+
+  .download-app-banner .app-buttons a img {
+    height: 45px;
+  }
+}
+

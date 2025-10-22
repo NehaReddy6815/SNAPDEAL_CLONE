@@ -1,0 +1,149 @@
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 10px;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-title {
+  font-weight: 600;
+  margin: 15px 0 8px;
+  color: #000a0c;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  cursor: pointer;
+  color: #3e3c3c;
+  font-size: 14px;
+}
+
+.sidebar-list.text-only li {
+  display: block;
+  padding: 3px 0;
+}
+
+.sidebar-list > li > span.active {
+  color: #e40046;
+}
+
+.sidebar-category-item {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.sidebar-category-item:hover,
+.sidebar-category-item .active {
+  background-color: #f0f0f0;
+}
+
+/* Category icons (circle images) */
+.category-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+/* Flyout menu */
+.sidebar-flyout {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 280px; 
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  margin-left: 4px;
+  display: flex;       /* side-by-side layout */
+  gap: 20px;           /* space between sublist and image */
+  align-items: flex-start;
+}
+
+/* Subcategory list */
+.sidebar-sublist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-sublist li {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #414141;
+  cursor: pointer;
+}
+
+.sidebar-sublist li strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  cursor: default;
+}
+
+/* Sub-subcategory nested under subcategory */
+.sidebar-sub-sublist {
+  list-style: circle;
+  padding-left: 15px;
+  margin: 0 0 5px 0;
+}
+
+.sidebar-sub-sublist li {
+  font-size: 12px;
+  color: #666;
+  margin: 2px 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar-sub-sublist li:hover {
+  color: #ff3d00;
+}
+/* Subcategory list - all items in the same column */
+.sidebar-sublist li {
+  font-size: 13px;
+  color: #414141;
+  cursor: pointer;
+  margin: 0;      /* Remove vertical spacing */
+  padding: 5px;     /* Remove padding */
+  line-height: 1.2; /* Optional: controls spacing between lines */
+}
+
+/* Make first item bold */
+.sidebar-sublist li:first-child {
+  font-weight: 600;
+}
+.sidebar-link {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps the text color same as parent */
+  cursor: pointer;       /* optional: shows pointer on hover */
+}
+.sidebar-image {
+  display: flex;
+  flex: 1;           /* take remaining space */
+}
+
+.sidebar-image img {
+  width: 100%;       /* full width of container */
+  height:180px;     /* keep aspect ratio */
+  border-radius: 2px;
+  display: block;
+}
+

@@ -1,0 +1,140 @@
+.carousel-description {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  border-top: none; /* merges with carousel */
+  width: 100%;
+  justify-content: center;
+
+}
+
+.carousel-description ul {
+  display: flex;
+  justify-content: center; /* spread items across full width */
+  list-style: none;
+  padding:  0;   
+  margin:0;
+  width: 100%;
+}
+
+.carousel-description li {
+  flex: 1;             
+  justify-content: center; 
+  cursor: pointer;
+  padding: 12px 0 ;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  position: relative;
+  
+}
+.carousel-description li span {
+  display: inline-block;   
+  padding: 0 4px;          
+}
+
+
+.carousel-description li.active { 
+  border-bottom: 1px solid #000;
+  font-weight: 400; 
+  color: #000;
+}
+.carousel-description li.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;   
+  height: 2px;
+  background: #000;
+}
+
+#snapCarousel .carousel-inner {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 100%;  
+  max-width: 900px; 
+  margin: 0 auto;
+  height: 250px;
+}
+
+
+
+#snapCarousel .carousel-control-next {
+  left: auto;
+  right: 16px;
+}
+#snapCarousel .carousel-control-prev {
+  right: auto;
+  left: 16px;
+}
+
+
+.carousel-img {
+  max-width:900px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+#snapCarousel .carousel-control-prev,
+#snapCarousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;               /* flexbox for centering */
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  opacity: 1;
+  z-index: 2;
+  border: 1px solid #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+
+#snapCarousel .carousel-control-prev-icon,
+#snapCarousel .carousel-control-next-icon {
+  background: none;
+  width: 18px;      
+  height: 18px;
+  display: block;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  font-weight:bolder;
+  background-color: #222; 
+}
+
+
+
+#snapCarousel .carousel-control-prev-icon {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' stroke='black' stroke-width='2' fill='none'><path d='M10.5 2l-5 6 5 6'/></svg>");
+}
+#snapCarousel .carousel-control-next-icon {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' stroke='black' stroke-width='2' fill='none'><path d='M5.5 2l5 6-5 6'/></svg>");
+}
+/* Default button */
+#snapCarousel .carousel-control-prev,
+#snapCarousel .carousel-control-next {
+  transition: all 0.3s ease;
+}
+
+#snapCarousel .carousel-control-prev:hover,
+#snapCarousel .carousel-control-next:hover {
+  background: #000;        
+  border-color: #000;
+}
+
+#snapCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+#snapCarousel .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #fff;  
+}
+
+

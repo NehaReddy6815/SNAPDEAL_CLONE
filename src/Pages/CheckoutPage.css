@@ -1,0 +1,86 @@
+.checkout-container {
+  width: 90%;
+  margin: 30px auto;
+  background: #f4f5f7;
+}
+
+.checkout-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.checkout-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.checkout-left {
+  flex: 2;
+}
+
+.checkout-right {
+  flex: 1;
+}
+
+.checkout-section {
+  background:#fff ;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.address-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.order-summary {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff3f6c;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.place-order-btn:hover {
+  background: #e6345d;
+}
